@@ -3,7 +3,7 @@
 
 ##### Install
 ```
-composer require gundars/heartbeat ^0.1
+composer require gundars/heartbeat ~0.1
 ```
 
 ##### Call in CLI 
