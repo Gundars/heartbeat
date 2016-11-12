@@ -7,6 +7,8 @@
       "email": "me@gundars.me"
     }
   ],
+  "type": "library",
+  "keywords": ["file", "include", "warm", "cache", "composer", "azure", "filestorage"],
   "license": "MIT",
   "autoload": {
     "psr-4": {
