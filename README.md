@@ -1,12 +1,12 @@
 # Heartbeat
-###### Includes - cache warms - all files found under specified path
+Includes - cache warms - all files found under specified path
 
-##### Install
+### Install
 ```
 composer require gundars/heartbeat ^0.1
 ```
 
-##### Call in CLI 
+### Call in CLI 
 
 ```
 > php vendor/gundars/heartbeat/load.php
@@ -15,7 +15,7 @@ Scanning /var/www/public/zend/approot
 10102 files loaded in: 0h 2m 49s
 ```
 
-##### Call with input parameter
+### Call with input parameter
 Paste this code in your index.php:
 
 ```
@@ -29,7 +29,7 @@ if (array_key_exists('heartbeat', $_REQUEST)) {
 ```
 and call via http(s) `http://example.com/?heartbeat=true`
 
-##### Manual Loading
+### Manual Loading
 ```
 <?php
 
@@ -39,13 +39,13 @@ $heartBeat = new Heartbeat();
 $heartBeat->->load(__DIR__ . '/../../../');
 ```
 
-##### Verbose
+### Verbose
 Prints all included files
 ```
 $heartBeat->verbose()->load(__DIR__);
 ```
 
-##### Die
+### Die
 stops script execution after file include is finished
 ```
 $heartBeat->verbose()->load(__DIR__, true);
