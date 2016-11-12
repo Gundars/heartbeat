@@ -1,5 +1,5 @@
 # Heartbeat
-Heartbeat is a fix for following issues:
+Heartbeat is a fix for:
 - slow file reads on cloud hostings where cache is not on the same server as application (Azure, AWS);
 - slow file includes from composer;
 
