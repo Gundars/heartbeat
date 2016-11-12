@@ -8,7 +8,7 @@ Best performance calling Heartbeat every 5 minutes having application + vendors 
 
 ### Install
 ```
-composer require gundars/heartbeat ^0.1
+composer require gundars/heartbeat ~0.1
 ```
 
 ### Call in CLI 
