@@ -1,6 +1,9 @@
 <?php
 
-require_once __DIR__ . '/Heartbeat.php';
+#require_once __DIR__ . '/Heartbeat.php';
+require __DIR__ . '/../../autoload.php';
 
-$heartBeat = new Heartbeat\Heartbeat();
-$heartBeat->/*verbose()->*/load(__DIR__ . '/../../../');
+use Heartbeat\Heartbeat;
+
+$heartBeat = new Heartbeat();
+$heartBeat->/*verbose()*/->load(__DIR__ . '/../../../', true);

@@ -35,7 +35,7 @@ class Heartbeat
      * @param string $path
      * @param string $vendor
      */
-    public function load($path = '')
+    public function load($path = '', $die = false)
     {
         $timerStart = microtime(true);
         $path       = realpath(rtrim($path, '\/\\') ?: static::DEFAULT_ROOT_PATH);
@@ -51,6 +51,10 @@ class Heartbeat
         echo " in: "
              . $this->secondsToTime(round(microtime(true) - $timerStart, 0))
              . "\n";
+
+        if ($die) {
+            die();
+        }
     }
 
     /**
