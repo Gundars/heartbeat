@@ -1,0 +1,20 @@
+{
+  "name": "gundars/heartbeat",
+  "description": "Cache warms all files found under specified path",
+  "authors": [
+    {
+      "name": "Gundars",
+      "email": "me@gundars.me"
+    }
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Heartbeat\\": "/"
+    }
+  },
+  "scripts": {
+    "post-update-cmd": "composer dumpautoload -o",
+    "post-install-cmd": "composer dumpautoload -o"
+  }
+}
