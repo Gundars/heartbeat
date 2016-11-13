@@ -1,9 +1,10 @@
 # Heartbeat
-Heartbeat is a fix for:
-- slow file reads on cloud hostings where cache is not on the same server as application (Azure, AWS);
+Heartbeat helps with:
+- slow file reads on cloud hostings where cache is not on the same storage as application (Azure);
 - slow file includes from composer;
 
 Heartbeat finds all the files in your application, includes and "cache" warms
+
 Best performance calling Heartbeat every 5 minutes having application + vendors under 20 000 files
 
 ### Install
